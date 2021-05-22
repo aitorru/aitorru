@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/aitorru/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/aitorru/static/js/main.3159556a.chunk.js",
+    "main.js.map": "/aitorru/static/js/main.3159556a.chunk.js.map",
+    "runtime-main.js": "/aitorru/static/js/runtime-main.611f59a2.js",
+    "runtime-main.js.map": "/aitorru/static/js/runtime-main.611f59a2.js.map",
+    "static/js/2.892859b1.chunk.js": "/aitorru/static/js/2.892859b1.chunk.js",
+    "static/js/2.892859b1.chunk.js.map": "/aitorru/static/js/2.892859b1.chunk.js.map",
+    "static/js/3.f89406bc.chunk.js": "/aitorru/static/js/3.f89406bc.chunk.js",
+    "static/js/3.f89406bc.chunk.js.map": "/aitorru/static/js/3.f89406bc.chunk.js.map",
+    "index.html": "/aitorru/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/aitorru/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.892859b1.chunk.js.LICENSE.txt": "/aitorru/static/js/2.892859b1.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/aitorru/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.611f59a2.js",
+    "static/js/2.892859b1.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.3159556a.chunk.js"
+  ]
+}
