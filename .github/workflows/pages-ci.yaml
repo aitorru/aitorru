@@ -3,9 +3,6 @@ name: Pages CI
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
   docs:
     runs-on: ubuntu-latest
 
