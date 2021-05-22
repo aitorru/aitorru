@@ -1,0 +1,20 @@
+name: Pages CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get the html and js
+        run: npm i && npm run predeploy
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
