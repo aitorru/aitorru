@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Get the html and js
-        run: npm i && npm run predeploy
+        run: npm i && npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
