@@ -1,10 +1,6 @@
+// tailwind.config.js
 module.exports = {
-  mode: 'jit',
-  purge: ['src/**/*.jsx', 'public/index.html'],
-  dark: false,
-  theme: {
-    extend: { },
-  },
-  variants: { },
-  plugins: [],
+    mode: 'jit',
+    purge: ['./public/**/*.html', './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}'],
+    // more options here
 };
