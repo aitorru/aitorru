@@ -1,12 +1,12 @@
 ---
 // You can import components from any supported Framework here!
-import Index from '../components/index.jsx'
+import Card from '../components/Card.jsx'
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = '';
+let title = 'Aitor Ruiz portfolio';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -23,11 +23,17 @@ let title = '';
         @tailwind base;
         @tailwind components;
         @tailwind utilities;
+
+        .avatar {
+            vertical-align: middle;
+            width: 80%;
+            height: auto;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
     <main>
-
         <!--
            - You can also use imported framework components directly in your markup!
            -
@@ -36,7 +42,29 @@ let title = '';
            -
            - See https://docs.astro.build/core-concepts/component-hydration/ 
            -->
-           <Index />
+           <div class="padre bg-gray-50 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 sm:grid-rows-2 md:grid-rows-1">
+            <div class="bg-gray-200 rounded-md shadow-lg hover:shadow-2xl transition-all delay-75 duration-300 ease-in-out m-3 hover:m-1">
+                <div class="flex flex-col items-center">
+                <img src="https://avatars.githubusercontent.com/u/22812015?v=4" class="avatar my-3">
+                <h1 class="m-2 mb-8 text-4xl">Aitor Ruiz portfolio</h1>
+                </div>
+            </div>
+            <div class="lg:col-span-3 md:col-span-3 bg-gray-200 rounded-md shadow-lg hover:shadow-2xl transition-all delay-75 duration-300 ease-in-out m-3 hover:m-1">
+                <div class="flex flex-col h-full w-full max-w-full justify-items-center justify-self-center items-center">
+                    <h1 class="m-2 mb-8 text-4xl">My projects</h1>
+                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-3/4 gap-3">
+                            <Card title="Minecraft timer" body="jsssss"/>
+                            <Card title="aemet-nextjs" body="jsssss"/>
+                    </div>
+                    <h1 class="m-2 mb-8 text-4xl">My likes</h1>
+                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-3/4 gap-3">
+                            <Card title="Node js" body="jsssss"/>
+                            <Card title="Java" body="jsssss"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
     </main>
 </body>
 </html>
